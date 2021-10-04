@@ -51,5 +51,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'jelou-world-app'
-          publish-profile: $
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F72C25D9C75741B38C98618122871BCE }}
           package: ./dist/jelou-world-app
